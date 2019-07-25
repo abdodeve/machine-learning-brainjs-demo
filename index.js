@@ -12,6 +12,6 @@ const trainingData = [
   { input: [1, 1], output: [0] }
 ];
 
-net.train(trainingData);
+net.train(trainingData);  
 
-console.log(net.run([1, 0]));
+console.log(net.run([1, 0])); 
