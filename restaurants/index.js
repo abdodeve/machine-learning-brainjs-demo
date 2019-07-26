@@ -21,13 +21,11 @@ for (let restaurantName in restaurants) {
     });
 }
 
+console.log(trainingData);
+
 const net = new brain.NeuralNetwork({ hiddenLayers: [3] });
 
 const stats = net.train(trainingData);
-
-console.log(stats);
-
-console.log(net.run({ 'Monday': 1 }));
 
 function restaurantForDay(dayOfWeek) {
     const result = net.run({ [dayOfWeek]: 1 });
